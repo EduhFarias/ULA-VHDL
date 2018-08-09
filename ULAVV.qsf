@@ -42,11 +42,6 @@ set_global_assignment -name TOP_LEVEL_ENTITY ula
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:01:32  JULHO 19, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
-set_global_assignment -name VHDL_FILE "../ULA-VHDL-master/ula.vhd"
-set_global_assignment -name VHDL_FILE "../ULA-VHDL-master/Sub.vhd"
-set_global_assignment -name VHDL_FILE "../ULA-VHDL-master/Soma.vhd"
-set_global_assignment -name VHDL_FILE "../ULA-VHDL-master/Or.vhd"
-set_global_assignment -name VHDL_FILE "../ULA-VHDL-master/And.vhd"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -72,4 +67,11 @@ set_location_assignment PIN_V18 -to Res[3]
 set_location_assignment PIN_W19 -to Res[2]
 set_location_assignment PIN_AF22 -to Res[1]
 set_location_assignment PIN_AE22 -to Res[0]
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE Sub.vhd
+set_global_assignment -name VHDL_FILE Soma.vhd
+set_global_assignment -name VHDL_FILE Or.vhd
+set_global_assignment -name VHDL_FILE And.vhd
+set_global_assignment -name VHDL_FILE ula.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -7,7 +7,7 @@ entity ULA is
 
 port(	A:	in std_logic_vector(3 downto 0);
 	B:	in std_logic_vector(3 downto 0);
-	con:	in std_logic_vector(5 downto 0);
+	con:	in std_logic_vector(2 downto 0);
 	Res:	out std_logic_vector(3 downto 0)    	
 );
 
@@ -31,38 +31,14 @@ ORER: entity work.doSUM port map (A,B,outOr);
 
 
 	case con is
-	    when "111100" =>
+	    when "000" =>
 				Res <= outAdd;
-	    when "111111" =>						
+	    when "001" =>						
 	        Res <= outSub;
-       when "001100" =>
+       when "010" =>
 				Res <= outAnd;
-	    when "011100" =>	 
+	    when "011" =>	 
 				Res <= outOr;
-	    when "011000" =>
-				Res <= A;
-	    when "010100" =>
-				Res <= B;
-	    when "011010" =>
-				Res <= not A;
-	    when "101100" =>
-				Res <= not B;
-	    when "111101" =>
-				Res <= outAdd + 1;
-	    when "111001" =>
-				Res <= A + 1;
-	    when "110101" =>
-				Res <= B + 1;
-	    when "110110" =>
-				Res <= B - 1;
-	    when "111011" =>
-				Res <= "0000"-A;-- -A
-	    when "010000" =>
-				Res <= "0000";
-	    when "110001" =>
-				Res <= "0001";
-	    when "110010" =>
-				Res <= -"0001";
 	    when others =>	 
 				Res <= "0000";
         end case;

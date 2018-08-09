@@ -19,7 +19,7 @@
 		process(A, B)
 		begin
 		
-			S <= B - A;
+			S <= A - B;
 			
 		end process;
 		
