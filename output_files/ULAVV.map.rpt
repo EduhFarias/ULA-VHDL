@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ULAVV
-Thu Aug  9 13:44:35 2018
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Tue Aug 21 14:32:06 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -42,8 +42,8 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Aug  9 13:44:35 2018           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Tue Aug 21 14:32:06 2018           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ULAVV                                           ;
 ; Top-level Entity Name              ; ULA                                             ;
 ; Family                             ; Cyclone II                                      ;
@@ -155,16 +155,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                    ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path             ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
-; Sub.vhd                          ; yes             ; User VHDL File  ; /home/alunoic/PSDCunha/ULA-VHDL/Sub.vhd  ;         ;
-; Soma.vhd                         ; yes             ; User VHDL File  ; /home/alunoic/PSDCunha/ULA-VHDL/Soma.vhd ;         ;
-; And.vhd                          ; yes             ; User VHDL File  ; /home/alunoic/PSDCunha/ULA-VHDL/And.vhd  ;         ;
-; ula.vhd                          ; yes             ; User VHDL File  ; /home/alunoic/PSDCunha/ULA-VHDL/ula.vhd  ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
+; Sub.vhd                          ; yes             ; User VHDL File  ; C:/Users/Aluno IC/Downloads/ULA-VHDL-master/Sub.vhd  ;         ;
+; Soma.vhd                         ; yes             ; User VHDL File  ; C:/Users/Aluno IC/Downloads/ULA-VHDL-master/Soma.vhd ;         ;
+; And.vhd                          ; yes             ; User VHDL File  ; C:/Users/Aluno IC/Downloads/ULA-VHDL-master/And.vhd  ;         ;
+; ula.vhd                          ; yes             ; User VHDL File  ; C:/Users/Aluno IC/Downloads/ULA-VHDL-master/ula.vhd  ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
 
 
 +------------------------------------------------------+
@@ -246,21 +246,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Aug  9 13:44:31 2018
+    Info: Processing started: Tue Aug 21 14:32:01 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULAVV -c ULAVV
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file Sub.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file sub.vhd
     Info (12022): Found design unit 1: doSUB-behv
     Info (12023): Found entity 1: doSUB
-Info (12021): Found 2 design units, including 1 entities, in source file Soma.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file soma.vhd
     Info (12022): Found design unit 1: doSUM-behv
     Info (12023): Found entity 1: doSUM
-Info (12021): Found 2 design units, including 1 entities, in source file Or.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file or.vhd
     Info (12022): Found design unit 1: doOR-behv
     Info (12023): Found entity 1: doOR
-Info (12021): Found 2 design units, including 1 entities, in source file And.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file and.vhd
     Info (12022): Found design unit 1: doAND-behv
     Info (12023): Found entity 1: doAND
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
@@ -281,10 +281,10 @@ Info (21057): Implemented 107 device resources after synthesis - the final resou
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 89 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 377 megabytes
-    Info: Processing ended: Thu Aug  9 13:44:35 2018
-    Info: Elapsed time: 00:00:04
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 521 megabytes
+    Info: Processing ended: Tue Aug 21 14:32:06 2018
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:04
 
 
