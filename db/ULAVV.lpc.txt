@@ -4,6 +4,7 @@
 ; Hierarchy ; Input ; Constant Input ; Unused Input ; Floating Input ; Output ; Constant Output ; Unused Output ; Floating Output ; Bidir ; Constant Bidir ; Unused Bidir ; Input only Bidir ; Output only Bidir ;
 +-----------+-------+----------------+--------------+----------------+--------+-----------------+---------------+-----------------+-------+----------------+--------------+------------------+-------------------+
 ; ORER      ; 8     ; 0              ; 0            ; 0              ; 4      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
+; DISPLAYER ; 12    ; 21             ; 0            ; 21             ; 21     ; 21              ; 21            ; 21              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; ANDER     ; 8     ; 0              ; 0            ; 0              ; 4      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; SUBBER    ; 8     ; 0              ; 0            ; 0              ; 4      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; ADDER     ; 8     ; 0              ; 0            ; 0              ; 4      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;

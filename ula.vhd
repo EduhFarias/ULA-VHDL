@@ -10,7 +10,8 @@ entity ULA is
 port(	A:	in std_logic_vector(3 downto 0);
 	B:	in std_logic_vector(3 downto 0);
 	con:	in std_logic_vector(5 downto 0);
-	Res:	out std_logic_vector(3 downto 0)    	
+	DISPLAY_1, DISPLAY_2, DISPLAY_3 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	outtie:	out std_logic_vector(3 downto 0)    	
 );
 
 end ULA;
@@ -22,11 +23,12 @@ signal outAdd: std_logic_vector(3 downto 0);
 signal outSub: std_logic_vector(3 downto 0);
 signal outOr: std_logic_vector(3 downto 0);
 signal outAnd: std_logic_vector(3 downto 0);
-
+signal Res: std_logic_vector(3 downto 0);
 begin					   
 ADDER: entity work.doSUM port map (A,B,outAdd);
 SUBBER: entity work.doSUB port map (A,B,outSub);
 ANDER: entity work.doAND port map (A,B,outAnd);
+DISPLAYER: entity work.DISPLAY port map (A,B, Res);
 ORER: entity work.doSUM port map (A,B,outOr);
     process(A,B,con)
     begin
@@ -66,7 +68,7 @@ ORER: entity work.doSUM port map (A,B,outOr);
 	    when others =>	 
 				Res <= "0000"; -- 0
         end case;
-
+	 outtie<=Res;
     end process;
 
 
