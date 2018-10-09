@@ -7,11 +7,11 @@ entity ULA is
 
 
 
-port(	A:	in std_logic_vector(3 downto 0);
-	B:	in std_logic_vector(3 downto 0);
+port(	A:	in std_logic_vector(32 downto 0);
+	B:	in std_logic_vector(32 downto 0);
 	con:	in std_logic_vector(5 downto 0);
 	DISPLAY_1, DISPLAY_2, DISPLAY_3 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	outtie:	out std_logic_vector(3 downto 0)    	
+	outtie:	out std_logic_vector(32 downto 0)    	
 );
 
 end ULA;
@@ -19,11 +19,11 @@ end ULA;
 ---------------------------------------------------
 
 architecture behv of ULA is
-signal outAdd: std_logic_vector(3 downto 0);
-signal outSub: std_logic_vector(3 downto 0);
-signal outOr: std_logic_vector(3 downto 0);
-signal outAnd: std_logic_vector(3 downto 0);
-signal Res: std_logic_vector(3 downto 0);
+signal outAdd: std_logic_vector(32 downto 0);
+signal outSub: std_logic_vector(32 downto 0);
+signal outOr: std_logic_vector(32 downto 0);
+signal outAnd: std_logic_vector(32 downto 0);
+signal Res: std_logic_vector(32 downto 0);
 begin					   
 ADDER: entity work.doSUM port map (A,B,outAdd);
 SUBBER: entity work.doSUB port map (A,B,outSub);
@@ -66,7 +66,7 @@ ORER: entity work.doSUM port map (A,B,outOr);
 	    when "110010" =>
 				Res <= -"0001"; -- -1
 	    when others =>	 
-				Res <= "0000"; -- 0
+				Res <= (others => '0'); -- 0
         end case;
 	 outtie<=Res;
     end process;
